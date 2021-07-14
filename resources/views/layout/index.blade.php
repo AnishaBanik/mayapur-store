@@ -5,7 +5,7 @@
     
     <!-- Basic page needs
 	============================================ -->
-	<title>Maxshop - Premium Multipurpose HTML5/CSS3 Theme</title>
+	<title>Mayapur Online Store</title>
 	<meta charset="utf-8">
     <meta name="keywords" content="boostrap, responsive, html5, css3, jquery, theme, multicolor, parallax, retina, business" />
     <meta name="author" content="Magentech">
@@ -25,22 +25,22 @@
 	
     <!-- Libs CSS
 	============================================ -->
-    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-	<link href="css/themecss/lib.css" rel="stylesheet">
-	<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+	<link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../js/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="../css/themecss/lib.css" rel="stylesheet">
+	<link href="../js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 	
 	<!-- Theme CSS
 	============================================ -->
-   	<link href="css/themecss/so_megamenu.css" rel="stylesheet">
-    <link href="css/themecss/so-categories.css" rel="stylesheet">
-	<link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
-	<link href="css/themecss/animate.css" rel="stylesheet">
-	<link href="css/themecss/so-super-category.css" rel="stylesheet">
-	<link id="color_scheme" href="css/theme.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+   	<link href="../css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="../css/themecss/so-categories.css" rel="stylesheet">
+	<link href="../css/themecss/so-listing-tabs.css" rel="stylesheet">
+	<link href="../css/themecss/animate.css" rel="stylesheet">
+	<link href="../css/themecss/so-super-category.css" rel="stylesheet">
+	<link id="color_scheme" href="../css/theme.css" rel="stylesheet">
+	<link href="../css/responsive.css" rel="stylesheet">
 	
 
 </head>
@@ -95,13 +95,13 @@
 									<li class="form-group languages-block ">
 										<form action="index.html" method="post" enctype="multipart/form-data" id="bt-language">
 											<a class="btn btn-xs dropdown-toggle" data-toggle="dropdown">
-												<img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/flags/gb.png" alt="English" title="English">
+												<img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/flags/gb.png" alt="English" title="English">
 												<span class="">English</span>
 												<span class="fa fa-angle-down"></span>
 											</a>
 											<ul class="dropdown-menu">
-												<li><a href="index.html"><img class="image_flag lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/flags/gb.png" alt="English" title="English" /> English </a></li>
-												<li> <a href="index.html"> <img class="image_flag lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/flags/lb.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
+												<li><a href="index.html"><img class="image_flag lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/flags/gb.png" alt="English" title="English" /> English </a></li>
+												<li> <a href="index.html"> <img class="image_flag lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/flags/lb.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
 											</ul>
 										</form>
 									</li>
@@ -118,7 +118,7 @@
 					<div class="row">
 						<!-- LOGO -->
 						<div class="navbar-logo col-md-3 col-sm-4 col-xs-10">
-						   <a href="index.html"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/logos/theme_logo.png" title="Your Store" alt="Your Store" /></a>
+						   <a href="index.html"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/logos/theme_logo.png" title="Your Store" alt="Your Store" /></a>
 						</div>
 						<div class="header-center-right col-md-9 col-sm-8 col-xs-2">
 							<div class="responsive so-megamenu  megamenu-style-dev">
@@ -137,585 +137,317 @@
 											<div class="megamenu-pattern">
 												<div class="container">
 													<ul class="megamenu " data-transition="slide" data-animationtime="250">
-														
+														@foreach($cats as $cat)
 														<li class="with-sub-menu hover">
 															<p class="close-menu"></p>
 															<a href="#" class="clearfix">
 																<strong>
-																	
-																	Books
-																</strong>
-							
-																<b class="caret"></b>
-															</a>
-															<div class="sub-menu" style="width: 100%; right: auto;">
-																<div class="content" >
-																	<div class="row">
-																		<div class="col-md-3">
-																			<div class="column">
-																				<a href="#" class="title-submenu">Listing pages</a>
-																				<div>
-																					<ul class="row-list">
-																						<li><a href="category.html">Category Page 1 </a></li>
-																						<li><a href="category-v2.html">Category Page 2</a></li>
-																						<li><a href="category-v3.html">Category Page 3</a></li>
-																					</ul>
-																					
-																				</div>
-																			</div>
-																		</div>
-																		<div class="col-md-3">
-																			<div class="column">
-																				<a href="#" class="title-submenu">Product pages</a>
-																				<div>
-																					<ul class="row-list">
-																						<li><a href="product.html">Product Page 1</a></li>
-																						<li><a href="product-v2.html">Product Page 2</a></li>
-																						<li><a href="product-v3.html">Product Page 3</a></li>
-																						<li><a href="product-v4.html">Product Page 4</a></li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="col-md-3">
-																			<div class="column">
-																				<a href="#" class="title-submenu">Shopping pages</a>
-																				<div>
-																					<ul class="row-list">
-																						<li><a href="cart.html">Shopping Cart Page</a></li>
-																						<li><a href="checkout.html">Checkout Page</a></li>
-																						<li><a href="compare.html">Compare Page</a></li>
-																						<li><a href="wishlist.html">Wishlist Page</a></li>
-																					
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="col-md-3">
-																			<div class="column">
-																				<a href="#" class="title-submenu">My Account pages</a>
-																				<div>
-																					<ul class="row-list">
-																						<li><a href="login.html">Login Page</a></li>
-																						<li><a href="register.html">Register Page</a></li>
-																						<li><a href="my-account.html">My Account</a></li>
-																						<li><a href="order-history.html">Order History</a></li>
-																						<li><a href="order-information.html">Order Information</a></li>
-																						<li><a href="return.html">Product Returns</a></li>
-																						<li><a href="gift-voucher.html">Gift Voucher</a></li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li class="with-sub-menu hover">
-															<p class="close-menu"></p>
-															<a href="#" class="clearfix">
-																<strong>
-                                                                    <img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/menu/hot-icon.png" alt="">
-                                                                    Kid's Corner
-                                                                </strong>
-																<b class="caret"></b>
-															</a>
-															<div class="sub-menu" style="width: 40%; ">
-																<div class="content" >
-																	<div class="row">
-																		<div class="col-md-6">
-																			<ul class="row-list">
-																				<li><a class="subcategory_item" href="faq.html">FAQ</a></li>
-																				<li><a class="subcategory_item" href="typography.html">Typography</a></li>
-																				<li><a class="subcategory_item" href="sitemap.html">Site Map</a></li>
-																				<li><a class="subcategory_item" href="contact.html">Contact us</a></li>
-																				<li><a class="subcategory_item" href="banner-effect.html">Banner Effect</a></li>
-																			</ul>
-																		</div>
-																		<div class="col-md-6">
-																			<ul class="row-list">
-																				<li><a class="subcategory_item" href="about-us.html">About Us 1</a></li>
-																				<li><a class="subcategory_item" href="about-us-2.html">About Us 2</a></li>
-																				<li><a class="subcategory_item" href="about-us-3.html">About Us 3</a></li>
-																				<li><a class="subcategory_item" href="about-us-4.html">About Us 4</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li class="with-sub-menu hover">
-															<p class="close-menu"></p>
-															<a href="#" class="clearfix">
-																<strong>
-                                                                    <img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/menu/new-icon.png" alt="">
-                                                                    Musical Instruments
+                                                                    {{$cat->name}}
                                                                 </strong>
 																<span class="label"></span>
 																<b class="caret"></b>
 															</a>
-															<div class="sub-menu" style="width: 100%; display: none;">
+															<div class="sub-menu" style="width: fit-content; display: none;">
 																<div class="content">
+																	<?php $total=1; ?>
+																	@foreach($subCats as $subs)
+																		@if($subs->catId == $cat->id)
+																			<?php $total++; ?>
+																		@endif
+																	@endforeach
+
+																	@if($total<=4)
 																	<div class="row">
-																		<div class="col-sm-12">
+																		<div class="col-md-12">
+																		<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			<a href="#" class="title-submenu"></a>
 																			<div class="row">
-																				<div class="col-md-3 img img1">
-																					<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/img1.jpg" alt="banner1"></a>
-																				</div>
-																				<div class="col-md-3 img img2">
-																					<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/img2.jpg" alt="banner2"></a>
-																				</div>
-																				<div class="col-md-3 img img3">
-																					<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/img3.jpg" alt="banner3"></a>
-																				</div>
-																				<div class="col-md-3 img img4">
-																					<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/img4.jpg" alt="banner4"></a>
+																				<div class="col-md-12 hover-menu">
+																					<div class="menu">
+																						<ul>
+																						<?php $count=1; ?>
+																						<?php $flag=0;?>
+																						@for($i=0; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=4)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
+																						</ul>
+																					</div>
 																				</div>
 																			</div>
 																		</div>
+																		
 																	</div>
+																	@endif
+
+																	@if($total>4 && $total<=8)
 																	<div class="row">
-																		<div class="col-md-3">
-																			<a href="#" class="title-submenu">Automotive</a>
+																		<div class="col-md-6">
+																		<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			<a href="#" class="title-submenu"></a>
 																			<div class="row">
 																				<div class="col-md-12 hover-menu">
 																					<div class="menu">
 																						<ul>
-																							<li><a href="#"  class="main-menu">Car Alarms and Security</a></li>
-																							<li><a href="#"  class="main-menu">Car Audio &amp; Speakers</a></li>
-																							<li><a href="#"  class="main-menu">Gadgets &amp; Auto Parts</a></li>
-																							<li><a href="#"  class="main-menu">More Car Accessories</a></li>
+																						<?php $count=1; ?>
+																						<?php $flag=0;?>
+																						@for($i=0; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=4)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
 																						</ul>
 																					</div>
 																				</div>
 																			</div>
 																		</div>
-																		<div class="col-md-3">
-																			<a href="#" class="title-submenu">Electronics</a>
+																		<div class="col-md-6">
+																			@if($flag==1)
+																			<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			@endif
+																			<a href="#" class="title-submenu"></a>
 																			<div class="row">
 																				<div class="col-md-12 hover-menu">
 																					<div class="menu">
 																						<ul>
-																							<li><a href="#"  class="main-menu">Battereries &amp; Chargers</a></li>
-																							<li><a href="#"  class="main-menu">Headphones, Headsets</a></li>
-																							<li><a href="#"  class="main-menu">Home Audio</a></li>
-																							<li><a href="#"  class="main-menu">Mp3 Players &amp; Accessories</a></li>
+																						<?php $count=5; ?>
+																						<?php $flag=0;?>
+																						@for($i=$next+1; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=8)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
 																						</ul>
 																					</div>
 																				</div>
 																			</div>
 																		</div>
-																		<div class="col-md-3">
-																			<a href="#" class="title-submenu">Jewelry &amp; Watches</a>
-																			<div class="row">
-																				<div class="col-md-12 hover-menu">
-																					<div class="menu">
-																						<ul>
-																							<li><a href="#"  class="main-menu">Earings</a></li>
-																							<li><a href="#"  class="main-menu">Wedding Rings</a></li>
-																							<li><a href="#"  class="main-menu">Men Watches</a></li>
-																							<li><a href="#"  class="main-menu">Women Watches</a></li>
-																						</ul>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="col-md-3">
-																			<a href="#" class="title-submenu">Bags, Holiday Supplies</a>
-																			<div class="row">
-																				<div class="col-md-12 hover-menu">
-																					<div class="menu">
-																						<ul>
-																							<li><a href="#"  class="main-menu">Gift &amp; Lifestyle Gadgets</a></li>
-																							<li><a href="#"  class="main-menu">Gift for Man</a></li>
-																							<li><a href="#"  class="main-menu">Gift for Woman</a></li>
-																							<li><a href="#"  class="main-menu">Lighter &amp; Cigar Supplies</a></li>
-																						</ul>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
+																		
 																	</div>
-																</div>
-															</div>
-														</li>
-														
-														<li class="with-sub-menu hover">
-															<p class="close-menu"></p>
-															<a href="#" class="clearfix">
-																<strong>Clothing</strong>
-																
-																<b class="caret"></b>
-															</a>
-															<div class="sub-menu" style="width: 100%; display: none;">
-																<div class="content" style="display: none;">
+																	@endif
+
+																	@if($total>8 && $total<=12)
 																	<div class="row">
-																		<div class="col-md-8">
+																		<div class="col-md-4">
+																		<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			<a href="#" class="title-submenu"></a>
 																			<div class="row">
-																				<div class="col-md-6 static-menu">
+																				<div class="col-md-12 hover-menu">
 																					<div class="menu">
 																						<ul>
-																							<li>
-																								<a href="#"  class="main-menu">Automotive</a>
-																								<ul>
-																									<li><a href="#">Car Alarms and Security</a></li>
-																									<li><a href="#" >Car Audio &amp; Speakers</a></li>
-																									<li><a href="3#" >Gadgets &amp; Auto Parts</a></li>
-																								</ul>
-																							</li>
-																							<li>
-																								<a href="#"  class="main-menu">Smartphone &amp; Tablets</a>
-																								<ul>
-																									<li><a href="#" >Accessories for i Pad</a></li>
-																									<li><a href="#" >Apparel</a></li>
-																									<li><a href="#" >Accessories for iPhone</a></li>
-																								</ul>
-																							</li>
-																						</ul>
-																					</div>
-																				</div>
-																				<div class="col-md-6 static-menu">
-																					<div class="menu">
-																						<ul>
-																							<li>
-																								<a href="#" class="main-menu">Sports &amp; Outdoors</a>
-																								<ul>
-																									<li><a href="#" >Camping &amp; Hiking</a></li>
-																									<li><a href="#" >Cameras &amp; Photo</a></li>
-																									<li><a href="#" >Cables &amp; Connectors</a></li>
-																								</ul>
-																							</li>
-																							<li>
-																								<a href="#"  class="main-menu">Electronics</a>
-																								<ul>
-																									<li><a href="#" >Battereries &amp; Chargers</a></li>
-																									<li><a href="#" >Bath &amp; Body</a></li>
-																									<li><a href="#" >Outdoor &amp; Traveling</a></li>
-																								</ul>
-																							</li>
+																						<?php $count=1; ?>
+																						<?php $flag=0;?>
+																						@for($i=0; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=4)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
 																						</ul>
 																					</div>
 																				</div>
 																			</div>
 																		</div>
 																		<div class="col-md-4">
-																			<span class="title-submenu">Bestseller</span>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/35.jpg" width="80" alt="Filet Mign" title="Filet Mign"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Filet Mign</a></h4>
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">$88.00</p>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/W1.jpg" width="80" alt="Dail Lulpa" title="Dail Lulpa"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Dail Lulpa</a></h4>
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">$78.00</p>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/141.jpg" width="80" alt="Canon EOS 5D" title="Canon EOS 5D"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Canon EOS 5D</a></h4>
-																						
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">
-																							<span class="price-new">$60.00</span>
-																							<span class="price-old">$145.00</span>
-																							
-																						</p>
-																					</div>
-																				</div>
-																			</div>
-																			
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</li>
-                                                        <li class="with-sub-menu hover">
-															<p class="close-menu"></p>
-															<a href="#" class="clearfix">
-																<strong>Devotional Gifts</strong>
-																
-																<b class="caret"></b>
-															</a>
-															<div class="sub-menu" style="width: 100%; display: none;">
-																<div class="content" style="display: none;">
-																	<div class="row">
-																		<div class="col-md-8">
+																			@if($flag==1)
+																			<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			@endif
+																			<a href="#" class="title-submenu"></a>
 																			<div class="row">
-																				<div class="col-md-6 static-menu">
+																				<div class="col-md-12 hover-menu">
 																					<div class="menu">
 																						<ul>
-																							<li>
-																								<a href="#"  class="main-menu">Automotive</a>
-																								<ul>
-																									<li><a href="#">Car Alarms and Security</a></li>
-																									<li><a href="#" >Car Audio &amp; Speakers</a></li>
-																									<li><a href="3#" >Gadgets &amp; Auto Parts</a></li>
-																								</ul>
-																							</li>
-																							<li>
-																								<a href="#"  class="main-menu">Smartphone &amp; Tablets</a>
-																								<ul>
-																									<li><a href="#" >Accessories for i Pad</a></li>
-																									<li><a href="#" >Apparel</a></li>
-																									<li><a href="#" >Accessories for iPhone</a></li>
-																								</ul>
-																							</li>
-																						</ul>
-																					</div>
-																				</div>
-																				<div class="col-md-6 static-menu">
-																					<div class="menu">
-																						<ul>
-																							<li>
-																								<a href="#" class="main-menu">Sports &amp; Outdoors</a>
-																								<ul>
-																									<li><a href="#" >Camping &amp; Hiking</a></li>
-																									<li><a href="#" >Cameras &amp; Photo</a></li>
-																									<li><a href="#" >Cables &amp; Connectors</a></li>
-																								</ul>
-																							</li>
-																							<li>
-																								<a href="#"  class="main-menu">Electronics</a>
-																								<ul>
-																									<li><a href="#" >Battereries &amp; Chargers</a></li>
-																									<li><a href="#" >Bath &amp; Body</a></li>
-																									<li><a href="#" >Outdoor &amp; Traveling</a></li>
-																								</ul>
-																							</li>
+																						<?php $count=5; ?>
+																						<?php $flag=0;?>
+																						@for($i=$next+1; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=8)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
 																						</ul>
 																					</div>
 																				</div>
 																			</div>
 																		</div>
 																		<div class="col-md-4">
-																			<span class="title-submenu">Bestseller</span>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/35.jpg" width="80" alt="Filet Mign" title="Filet Mign"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Filet Mign</a></h4>
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">$88.00</p>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/W1.jpg" width="80" alt="Dail Lulpa" title="Dail Lulpa"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Dail Lulpa</a></h4>
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">$78.00</p>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/141.jpg" width="80" alt="Canon EOS 5D" title="Canon EOS 5D"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Canon EOS 5D</a></h4>
-																						
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">
-																							<span class="price-new">$60.00</span>
-																							<span class="price-old">$145.00</span>
-																							
-																						</p>
-																					</div>
-																				</div>
-																			</div>
-																			
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</li>
-                                                        <li class="with-sub-menu hover">
-															<p class="close-menu"></p>
-															<a href="#" class="clearfix">
-																<strong>Deities</strong>
-																
-																<b class="caret"></b>
-															</a>
-															<div class="sub-menu" style="width: 100%; display: none;">
-																<div class="content" style="display: none;">
-																	<div class="row">
-																		<div class="col-md-8">
+																			@if($flag==1)
+																			<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			@endif
+																			<a href="#" class="title-submenu"></a>
 																			<div class="row">
-																				<div class="col-md-6 static-menu">
+																				<div class="col-md-12 hover-menu">
 																					<div class="menu">
 																						<ul>
-																							<li>
-																								<a href="#"  class="main-menu">Automotive</a>
-																								<ul>
-																									<li><a href="#">Car Alarms and Security</a></li>
-																									<li><a href="#" >Car Audio &amp; Speakers</a></li>
-																									<li><a href="3#" >Gadgets &amp; Auto Parts</a></li>
-																								</ul>
-																							</li>
-																							<li>
-																								<a href="#"  class="main-menu">Smartphone &amp; Tablets</a>
-																								<ul>
-																									<li><a href="#" >Accessories for i Pad</a></li>
-																									<li><a href="#" >Apparel</a></li>
-																									<li><a href="#" >Accessories for iPhone</a></li>
-																								</ul>
-																							</li>
-																						</ul>
-																					</div>
-																				</div>
-																				<div class="col-md-6 static-menu">
-																					<div class="menu">
-																						<ul>
-																							<li>
-																								<a href="#" class="main-menu">Sports &amp; Outdoors</a>
-																								<ul>
-																									<li><a href="#" >Camping &amp; Hiking</a></li>
-																									<li><a href="#" >Cameras &amp; Photo</a></li>
-																									<li><a href="#" >Cables &amp; Connectors</a></li>
-																								</ul>
-																							</li>
-																							<li>
-																								<a href="#"  class="main-menu">Electronics</a>
-																								<ul>
-																									<li><a href="#" >Battereries &amp; Chargers</a></li>
-																									<li><a href="#" >Bath &amp; Body</a></li>
-																									<li><a href="#" >Outdoor &amp; Traveling</a></li>
-																								</ul>
-																							</li>
+																						<?php $count=9; ?>
+																						<?php $flag=0;?>
+																						@for($i=$next+1; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=12)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
 																						</ul>
 																					</div>
 																				</div>
 																			</div>
 																		</div>
-																		<div class="col-md-4">
-																			<span class="title-submenu">Bestseller</span>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/35.jpg" width="80" alt="Filet Mign" title="Filet Mign"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Filet Mign</a></h4>
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">$88.00</p>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/W1.jpg" width="80" alt="Dail Lulpa" title="Dail Lulpa"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Dail Lulpa</a></h4>
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						   <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">$78.00</p>
+																		
+																	</div>
+																	@endif
+
+																	@if($total>12 && $total<=16)
+																	<div class="row">
+																		<div class="col-md-3">
+																		<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			<a href="#" class="title-submenu"></a>
+																			<div class="row">
+																				<div class="col-md-12 hover-menu">
+																					<div class="menu">
+																						<ul>
+																						<?php $count=1; ?>
+																						<?php $flag=0;?>
+																						@for($i=0; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=4)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
+																						</ul>
 																					</div>
 																				</div>
 																			</div>
-																			<div class="col-sm-12 list-product">
-																				<div class="product-thumb">
-																					<div class="image pull-left">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/141.jpg" width="80" alt="Canon EOS 5D" title="Canon EOS 5D"></a>
-																					</div>
-																					<div class="caption">
-																						<h4><a href="#">Canon EOS 5D</a></h4>
-																						
-																						<div class="ratings">
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																							<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-																						</div>
-																						<p class="price">
-																							<span class="price-new">$60.00</span>
-																							<span class="price-old">$145.00</span>
-																							
-																						</p>
+																		</div>
+																		<div class="col-md-3">
+																			@if($flag==1)
+																			<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			@endif
+																			<a href="#" class="title-submenu"></a>
+																			<div class="row">
+																				<div class="col-md-12 hover-menu">
+																					<div class="menu">
+																						<ul>
+																						<?php $count=5; ?>
+																						<?php $flag=0;?>
+																						@for($i=$next+1; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=8)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
+																						</ul>
 																					</div>
 																				</div>
 																			</div>
-																			
+																		</div>
+																		<div class="col-md-3">
+																			@if($flag==1)
+																			<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			@endif
+																			<a href="#" class="title-submenu"></a>
+																			<div class="row">
+																				<div class="col-md-12 hover-menu">
+																					<div class="menu">
+																						<ul>
+																						<?php $count=9; ?>
+																						<?php $flag=0;?>
+																						@for($i=$next+1; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=12)
+																						<?php $count++; ?>
+																						<?php $next= $i;?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						@for($i=$next+1; $i< count($subCats); $i++)
+																						@if($subCats[$i]->catId== $cat->id)
+																						<?php $flag=1;?>
+																						@endif
+																						@endfor
+																						</ul>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-md-3">
+																			@if($flag==1)
+																			<a href="#"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img1.jpg" alt="banner1"></a>
+																			@endif
+																			<a href="#" class="title-submenu"></a>
+																			<div class="row">
+																				<div class="col-md-12 hover-menu">
+																					<div class="menu">
+																						<ul>
+																						<?php $count=13; ?>
+																						@for($i=$next+1; $i < count($subCats); $i++)
+																						@if($subCats[$i]->catId == $cat->id && $count<=16)
+																						<?php $count++; ?>
+																							<li><a href="#"  class="main-menu">{{$subCats[$i]->name}}</a></li>
+																						@endif
+																						@endfor
+																						</ul>
+																					</div>
+																				</div>
+																			</div>
 																		</div>
 																	</div>
+																	@endif
+																	
 																</div>
 															</div>
 														</li>
-														
+														@endforeach
 													</ul>
 													
 												</div>
@@ -770,7 +502,7 @@
 																	<p class="close-menu"></p>
 																	<a href="#" class="clearfix">
 																		<strong>
-																		<span>Automotive &amp; Motocrycle</span>
+																		<span>Books</span>
 																		<b class="fa fa-angle-right"></b>
 																		</strong> 
 																	</a>
@@ -833,27 +565,19 @@
 																				</div>
 																				<div class="col-sm-4">
 																					<div class="row img-banner">
-																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/img-static-megamenu-h.png" alt="banner"></a>
+																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img-static-megamenu-h.png" alt="banner"></a>
 																					</div>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
 																</li>
-																<li class="item-vertical">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		<strong>
-																		<span>Electronic</span>
-																		</strong>
-																	</a>
-																</li>
 																<li class="item-vertical with-sub-menu hover">
 																	<p class="close-menu"></p>
 																	<a href="#" class="clearfix">
 																		<span class="label"></span>
 																		<strong>
-																		<span>Sports &amp; Outdoors</span>
+																		<span>Kid's Corner</span>
 																		<b class="fa fa-angle-right"></b>
 																		</strong>
 																	</a>
@@ -898,19 +622,19 @@
 																				<div class="col-md-6">
 																					<div class="row banner">
 																						<a href="#">
-																							<img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/menu_bg2.jpg" alt="banner1">
+																							<img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/menu_bg2.jpg" alt="banner1">
 																							</a>
 																						</div>
 																					</div>
 																				</div>
 																			</div>
 																		</div>
-																	</li>
-																	<li class="item-vertical with-sub-menu hover">
+																</li>
+																<li class="item-vertical with-sub-menu hover">
 																		<p class="close-menu"></p>
 																		<a href="#" class="clearfix">
 																			<strong>
-																			<span>Health &amp; Beauty</span>
+																			<span>Musical Instruments</span>
 																			<b class="fa fa-angle-right"></b>
 																			</strong>
 																		</a>
@@ -1036,13 +760,13 @@
 																				</div>
 																			</div>
 																		</div>
-																	</li>
-																	<li class="item-vertical css-menu with-sub-menu hover">
+																</li>
+																<li class="item-vertical css-menu with-sub-menu hover">
 																		<p class="close-menu"></p>
 																		<a href="#" class="clearfix">
 																			
 																			<strong>
-																				<span>Smartphone &amp; Tablets</span>
+																				<span>Clothing</span>
 																				<b class="fa fa-angle-right"></b>
 																			</strong>
 																		</a>
@@ -1090,61 +814,212 @@
 																				</div>
 																			</div>
 																		</div>
-																	</li>
-																	<li class="item-vertical">
+																</li>
+																<li class="item-vertical with-sub-menu hover">
 																		<p class="close-menu"></p>
 																		<a href="#" class="clearfix">
 																			<strong>
-																				<span>Flashlights &amp; Lamps</span>
+																			<span>Devotional Gifts</span>
+																			<b class="fa fa-angle-right"></b>
 																			</strong>
 																		</a>
-																	</li>
-																	<li class="item-vertical">
-																		<p class="close-menu"></p>
-																		<a href="#" class="clearfix">
-																			<strong>
-																				<span>Camera &amp; Photo</span>
-																			</strong>
-																		</a>
-																	</li>
-																	<li class="item-vertical">
-																		<p class="close-menu"></p>
-																		<a href="#" class="clearfix">
-																			<strong>
-																				<span>Smartphone &amp; Tablets</span>
-																			</strong>
-																		</a>
-																	</li>
-																	<li class="item-vertical" >
-																		<p class="close-menu"></p>
-																		<a href="#" class="clearfix">
-																			<strong>
-																				<span>Outdoor &amp; Traveling Supplies</span>
-																			</strong>
-																		</a>
-																	</li>
-																	<li class="item-vertical" style="display: none;">
-																		<p class="close-menu"></p>
-																		
-																		<a href="#" class="clearfix">
-																			<strong>
-																				<span>Health &amp; Beauty</span>
-																			</strong>
-																		</a>
-																	</li>
-																	<li class="item-vertical" >
-																		<p class="close-menu"></p>
-																		<a href="#" class="clearfix">
-																			<strong>
-																				<span>Toys &amp; Hobbies </span>
-																			</strong>
-																		</a>
-																	</li>
-																	
-																	<li class="loadmore">
-																		<i class="fa fa-plus-square-o"></i>
-																		<span class="more-view">More Categories</span>
-																	</li>
+																		<div class="sub-menu" data-subwidth="100" >
+																			<div class="content" >
+																				<div class="row">
+																					<div class="col-md-12">
+																						<div class="row">
+																							<div class="col-md-4 static-menu">
+																								<div class="menu">
+																									<ul>
+																										<li>
+																											<a href="#" class="main-menu">Car Alarms and Security</a>
+																											<ul>
+																												<li><a href="#" >Car Audio &amp; Speakers</a></li>
+																												<li><a href="#" >Gadgets &amp; Auto Parts</a></li>
+																												<li><a href="#" >Gadgets &amp; Auto Parts</a></li>
+																												<li><a href="#" >Headphones, Headsets</a></li>
+																											</ul>
+																										</li>
+																										<li>
+																											<a href="24" onclick="window.location = '24';" class="main-menu">Health &amp; Beauty</a>
+																											<ul>
+																												<li>
+																													<a href="#" >Home Audio</a>
+																												</li>
+																												<li>
+																													<a href="#" >Helicopters &amp; Parts</a>
+																												</li>
+																												<li>
+																													<a href="#" >Outdoor &amp; Traveling</a>
+																												</li>
+																												<li>
+																													<a href="#">Toys &amp; Hobbies</a>
+																												</li>
+																											</ul>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																							<div class="col-md-4 static-menu">
+																								<div class="menu">
+																									<ul>
+																										<li>
+																											<a href="#"  class="main-menu">Electronics</a>
+																											<ul>
+																												<li>
+																													<a href="#">Earings</a>
+																												</li>
+																												<li>
+																													<a href="#" >Salon &amp; Spa Equipment</a>
+																												</li>
+																												<li>
+																													<a href="#" >Shaving &amp; Hair Removal</a>
+																												</li>
+																												<li>
+																													<a href="#">Smartphone &amp; Tablets</a>
+																												</li>
+																											</ul>
+																										</li>
+																										<li>
+																											<a href="#"  class="main-menu">Sports &amp; Outdoors</a>
+																											<ul>
+																												<li>
+																													<a href="#" >Flashlights &amp; Lamps</a>
+																												</li>
+																												<li>
+																													<a href="#" >Fragrances</a>
+																												</li>
+																												<li>
+																													<a href="#" >Fishing</a>
+																												</li>
+																												<li>
+																													<a href="#" >FPV System &amp; Parts</a>
+																												</li>
+																											</ul>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																							<div class="col-md-4 static-menu">
+																								<div class="menu">
+																									<ul>
+																										<li>
+																											<a href="#" class="main-menu">More Car Accessories</a>
+																											<ul>
+																												<li>
+																													<a href="#" >Lighter &amp; Cigar Supplies</a>
+																												</li>
+																												<li>
+																													<a href="#" >Mp3 Players &amp; Accessories</a>
+																												</li>
+																												<li>
+																													<a href="#" >Men Watches</a>
+																												</li>
+																												<li>
+																													<a href="#" >Mobile Accessories</a>
+																												</li>
+																											</ul>
+																										</li>
+																										<li>
+																											<a href="#" class="main-menu">Gadgets &amp; Auto Parts</a>
+																											<ul>
+																												<li>
+																													<a href="#" >Gift &amp; Lifestyle Gadgets</a>
+																												</li>
+																												<li>
+																													<a href="#" >Gift for Man</a>
+																												</li>
+																												<li>
+																													<a href="#" >Gift for Woman</a>
+																												</li>
+																												<li>
+																													<a href="#" >Gift for Woman</a>
+																												</li>
+																											</ul>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																</li>
+																<li class="item-vertical style1 with-sub-menu hover">
+																	<p class="close-menu"></p>
+																	<a href="#" class="clearfix">
+																		<strong>
+																		<span>Dieties & Paraphernalia</span>
+																		<b class="fa fa-angle-right"></b>
+																		</strong> 
+																	</a>
+																	<div class="sub-menu" data-subwidth="100" >
+																		<div class="content" >
+																			<div class="row">
+																				<div class="col-sm-8">
+																					<div class="categories ">
+																						<div class="row">
+																							<div class="col-sm-6 static-menu">
+																								<div class="menu">
+																									<ul>
+																										<li>
+																											<a href="#" class="main-menu">Automotive</a>
+																											<ul>
+																												<li> <a href="#">Car Alarms and Security</a>	</li>
+																												<li> <a href="#">Car Audio &amp; Speakers</a>   </li>
+																												<li> <a href="#">Gadgets &amp; Auto Parts</a>	</li>
+																												<li> <a href="#">More Car Accessories</a>		</li>
+																											</ul>
+																										</li>
+																										<li>
+																											<a href="#" class="main-menu">Computer</a>
+																											<ul>
+																												<li> <a href="#">Camping &amp; Hiking</a>	</li>
+																												<li> <a href="#">Cusen mariot</a>			</li>
+																												<li> <a href="#">Denta magela</a>			</li>
+																												<li> <a href="#">Engite nanet</a>			</li>
+																											</ul>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																							<div class="col-sm-6 static-menu">
+																								<div class="menu">
+																									<ul>
+																										<li>
+																											<a href="#" class="main-menu">Electronics </a>
+																											<ul>
+																												<li>	<a href="#">Angene mafin</a>	</li>
+																												<li>	<a href="#">Egante mangetes</a>	</li>
+																												<li>	<a href="#">Gante extensg</a>	</li>
+																												<li>	<a href="#">Guntes magesg</a>	</li>
+																											</ul>
+																										</li>
+																										<li>
+																											<a href="#" class="main-menu">Mobile &amp; Tablet </a>
+																											<ul>
+																												<li>	<a href="#">Hanet magente</a>	</li>
+																												<li>	<a href="#">Knage unget</a>		</li>
+																												<li>	<a href="#">Latenge mange</a>	</li>
+																												<li>	<a href="#">Punge nenune</a>	</li>
+																											</ul>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-sm-4">
+																					<div class="row img-banner">
+																						<a href="#"><img class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/img-static-megamenu-h.png" alt="banner"></a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</li>
 																</ul>
 															</div>
 														</div>
@@ -1280,7 +1155,7 @@
 														<tbody>
 															<tr>
 																<td class="text-center" style="width:70px">
-																	<a href="product.html"> <img class="lazyload preview" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/35.jpg" style="width:70px" alt="Filet Mign" title="Filet Mign"> </a>
+																	<a href="product.html"> <img class="lazyload preview" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/shop/product/35.jpg" style="width:70px" alt="Filet Mign" title="Filet Mign"> </a>
 																</td>
 																<td class="text-left"> <a class="cart_product_name" href="product.html">Filet Mign</a> </td>
 																<td class="text-center"> x1 </td>
@@ -1294,7 +1169,7 @@
 															</tr>
 															<tr>
 																<td class="text-center" style="width:70px">
-																	<a href="product.html"> <img class="lazyload preview" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/shop/product/141.jpg" style="width:70px" alt="Canon EOS 5D" title="Canon EOS 5D"> </a>
+																	<a href="product.html"> <img class="lazyload preview" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/shop/product/141.jpg" style="width:70px" alt="Canon EOS 5D" title="Canon EOS 5D"> </a>
 																</td>
 																<td class="text-left"> <a class="cart_product_name" href="product.html">Canon EOS 5D</a> </td>
 																<td class="text-center"> x1 </td>
@@ -1335,7 +1210,12 @@
 																</tr>
 															</tbody>
 														</table>
-														<p class="text-center"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout</a> </p>
+														<p class="text-center"> 
+															<a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i>View Cart
+															</a>&nbsp;&nbsp;&nbsp; 
+															<a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout
+															</a> 
+														</p>
 													</div>
 												</li>
 											</ul>
@@ -1344,9 +1224,15 @@
 									<!--//cart-->
 								</div>
 								<div class="header_custom_link hidden-xs">
+									@if(isset($email))
 									<ul>
-										<li><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
-									</ul>	
+										<li><a href="/logout"><i class="fa fa-user"></i> Logout</a></li>
+									</ul>
+									@else
+									<ul>
+										<li><a href="/login"><i class="fa fa-user"></i> Login</a></li>
+									</ul>
+									@endif
 								</div>
 							</div>
 							<!-- //end Main menu -->
@@ -1418,7 +1304,7 @@
 							<div class="module ">
 								<div class="content-block-footer">
 									<div class="footer-logo">
-										<a href="index.html"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/logos/theme_logo.png" title="Your Store" alt="Your Store" /></a>
+										<a href="index.html"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/logos/theme_logo.png" title="Your Store" alt="Your Store" /></a>
 									</div>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 								</div>
@@ -1463,11 +1349,11 @@
 										<li><span class="fa fa-phone">&nbsp;</span> Phone 1: 0123456789</li>
 									</ul>
 									<ul class="payment-method">
-										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/payment/payment-1.png" alt="Payment"></a></li>
-										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/payment/payment-2.png" alt="Payment"></a></li>
-										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/payment/payment-3.png" alt="Payment"></a></li>
-										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/payment/payment-4.png" alt="Payment"></a></li>
-										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/demo/cms/payment/payment-5.png" alt="Payment"></a></li>
+										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/payment/payment-1.png" alt="Payment"></a></li>
+										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/payment/payment-2.png" alt="Payment"></a></li>
+										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/payment/payment-3.png" alt="Payment"></a></li>
+										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/payment/payment-4.png" alt="Payment"></a></li>
+										<li><a title="Payment Method" href="#"><img  class="lazyload img-responsive" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/demo/cms/payment/payment-5.png" alt="Payment"></a></li>
 									</ul>
 								</div>
 							</div>				
@@ -1500,7 +1386,7 @@
 						<h5>FACEBOOK</h5>
 					</div>
 					<div class="loading">
-						<img class="lazyload ajaxloader" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/lazy-loader.gif" alt="loader">
+						<img class="lazyload ajaxloader" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/lazy-loader.gif" alt="loader">
 					</div>
 				</div>
 			</li>
@@ -1510,7 +1396,7 @@
 						<h5>TWITTER FEEDS</h5> 
 					</div>
 					<div class="loading">
-						<img class="lazyload ajaxloader" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/lazy-loader.gif" alt="loader">
+						<img class="lazyload ajaxloader" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/lazy-loader.gif" alt="loader">
 					</div>
 				</div>
 			</li>
@@ -1519,7 +1405,7 @@
 					<div class="title">
 						<h5>YouTube</h5>
 					</div>
-					<div class="loading"> <img  class="lazyload ajaxloader" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/lazy-loader.gif" alt="loader"></div>
+					<div class="loading"> <img  class="lazyload ajaxloader" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/lazy-loader.gif" alt="loader"></div>
 				</div>
 			</li>
 		</ul>
@@ -1579,24 +1465,24 @@
 				<label>Body Image</label>
 				
 				<div class="group-pattern">
-					<div data-pattern="28"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/28.png" alt="pattern 28"></div>
-					<div data-pattern="29"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/29.png" alt="pattern 29"></div>
-					<div data-pattern="30"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/30.png" alt="pattern 30"></div>
-					<div data-pattern="31"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/31.png" alt="pattern 31"></div>
-					<div data-pattern="32"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/32.png" alt="pattern 32"></div>
-					<div data-pattern="33"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/33.png" alt="pattern 33"></div>
-					<div data-pattern="34"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/34.png" alt="pattern 34"></div>
-					<div data-pattern="35"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/35.png" alt="pattern 35"></div>
-					<div data-pattern="36"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/36.png" alt="pattern 36"></div>
-					<div data-pattern="37"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/37.png" alt="pattern 37"></div>
-					<div data-pattern="38"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/38.png" alt="pattern 38"></div>
-					<div data-pattern="39"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/39.png" alt="pattern 39"></div>
-					<div data-pattern="40"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/40.png" alt="pattern 40"></div>
-					<div data-pattern="41"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/41.png" alt="pattern 41"></div>
-					<div data-pattern="42"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/42.png" alt="pattern 42"></div>
-					<div data-pattern="43"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/43.png" alt="pattern 43"></div>
-					<div data-pattern="44"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/44.png" alt="pattern 44"></div>
-					<div data-pattern="45"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="image/theme/patterns/45.png" alt="pattern 45"></div>
+					<div data-pattern="28"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/28.png" alt="pattern 28"></div>
+					<div data-pattern="29"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/29.png" alt="pattern 29"></div>
+					<div data-pattern="30"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/30.png" alt="pattern 30"></div>
+					<div data-pattern="31"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/31.png" alt="pattern 31"></div>
+					<div data-pattern="32"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/32.png" alt="pattern 32"></div>
+					<div data-pattern="33"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/33.png" alt="pattern 33"></div>
+					<div data-pattern="34"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/34.png" alt="pattern 34"></div>
+					<div data-pattern="35"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/35.png" alt="pattern 35"></div>
+					<div data-pattern="36"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/36.png" alt="pattern 36"></div>
+					<div data-pattern="37"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/37.png" alt="pattern 37"></div>
+					<div data-pattern="38"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/38.png" alt="pattern 38"></div>
+					<div data-pattern="39"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/39.png" alt="pattern 39"></div>
+					<div data-pattern="40"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/40.png" alt="pattern 40"></div>
+					<div data-pattern="41"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/41.png" alt="pattern 41"></div>
+					<div data-pattern="42"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/42.png" alt="pattern 42"></div>
+					<div data-pattern="43"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/43.png" alt="pattern 43"></div>
+					<div data-pattern="44"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/44.png" alt="pattern 44"></div>
+					<div data-pattern="45"  class="img-pattern"><img class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../image/theme/patterns/45.png" alt="pattern 45"></div>
 				</div>
 				<p class="label-sm">Background only applies for Boxed,Framed, Rounded Layout</p>
 			</div>
@@ -1608,7 +1494,7 @@
 		</div>
 	</div>
 
-	<link rel='stylesheet' property='stylesheet'  href='css/themecss/cpanel.css' type='text/css' media='all' />
+	<link rel='stylesheet' property='stylesheet'  href='../css/themecss/cpanel.css' type='text/css' media='all' />
 	
 	<!-- Preloading Screen -->
 	<div id="loader-wrapper">
@@ -1621,24 +1507,31 @@
 	<!-- Include Libs & Plugins
 	============================================ -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/themejs/libs.js"></script>
-	<script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
-	<script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
-	<script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
-	<script type="text/javascript" src="js/datetimepicker/moment.js"></script>
-	<script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="../js/themejs/libs.js"></script>
+	<script type="text/javascript" src="../js/unveil/jquery.unveil.js"></script>
+	<script type="text/javascript" src="../js/countdown/jquery.countdown.min.js"></script>
+	<script type="text/javascript" src="../js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+	<script type="text/javascript" src="../js/datetimepicker/moment.js"></script>
+	<script type="text/javascript" src="../js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui/jquery-ui.min.js"></script>
 
 
 	<!-- Theme files
 	============================================ -->
-	<script type="text/javascript" src="js/themejs/application.js"></script>
-	<script type="text/javascript" src="js/themejs/toppanel.js"></script>
-	<script type="text/javascript" src="js/themejs/so_megamenu.js"></script>
-	<script type="text/javascript" src="js/themejs/addtocart.js"></script>
-	<script type="text/javascript" src="js/themejs/cpanel.js"></script>
+	<script type="text/javascript" src="../js/themejs/application.js"></script>
+	<script type="text/javascript" src="../js/themejs/toppanel.js"></script>
+	<script type="text/javascript" src="../js/themejs/so_megamenu.js"></script>
+	<script type="text/javascript" src="../js/themejs/addtocart.js"></script>
+	<script type="text/javascript" src="../js/themejs/cpanel.js"></script>
+
+	
+
+
+	<script type="text/javascript">
+		@yield("script")
+	</script>
 </body>
 </html>
