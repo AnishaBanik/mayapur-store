@@ -130,7 +130,9 @@
 											<?php $count++; ?>
 											<div class="item-element clearfix">
 												<div class="image">
+												<a href="{{url('view_product/'. $prod->id)}}">
 													<img  src="../image/demo/shop/product/1.png"  title="Teserunt hlitia" class="img-1 img-responsive" />
+												</a>
 												</div> 
 												<div class="caption">
 													
@@ -242,15 +244,17 @@
 											<div class="product-item-container">
 												<div class="left-block">
 													<div class="product-image-container second_img ">
+													<a href="{{url('view_product/'. $ups->id)}}">
 														<img  src="../image/demo/shop/product/e11.jpg"  title="Apple Cinema 30&quot;" class="img-1 img-responsive" />
 														<img  src="../image/demo/shop/product/e12.jpg"  title="Apple Cinema 30&quot;" class="img-2 img-responsive" />
+													</a>
 													</div>
 												</div>
 												<div class="button-group">
 													<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
 													<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
-													<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
-													<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>
+													{{--<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+													<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>--}}
 												</div>
 												
 												<div class="right-block">

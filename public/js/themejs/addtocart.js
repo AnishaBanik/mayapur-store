@@ -13,10 +13,30 @@
 			addProductNotice('Product added to Cart', '<img src="image/demo/shop/product/e11.jpg" alt="">', '<h3><a href="#">Apple Cinema 30"</a> added to <a href="#">shopping cart</a>!</h3>', 'success');
 		}
 	}
-
+	
 	var wishlist = {
 		'add': function(product_id) {
-			addProductNotice('Product added to Wishlist', '<img src="image/demo/shop/product/e11.jpg" alt="">', '<h3>You must <a href="#">login</a>  to save <a href="#">Apple Cinema 30"</a> to your <a href="#">wish list</a>!</h3>', 'success');
+			console.log(product_id);
+			$.ajax({
+				url:"/add_to_wishlist",
+				type: "post",
+				data:{
+					"token": "{{ cerf_token() }}",
+					"prod":product_id,
+				},
+				success:function(response)
+				{
+					console.log(response);
+				}
+			});
+
+			
+			addProductNotice(
+				'Product added to Wishlist', 
+				'<img src="image/demo/shop/product/e11.jpg" alt="">', 
+				'<h3>You must <a href="#">login</a>  to save <a href="#">Apple Cinema 30"</a> to your <a href="#">wish list</a>!</h3>', 
+				'success'
+				);
 		}
 	}
 	var compare = {
@@ -28,6 +48,7 @@
 	/* ---------------------------------------------------
 		jGrowl – jQuery alerts and message box
 	-------------------------------------------------- */
+	
 	function addProductNotice(title, thumb, text, type) {
 		$.jGrowl.defaults.closer = false;
 		//Stop jGrowl

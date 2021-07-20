@@ -1,6 +1,7 @@
 @extends("layout.index")
 @section("content")
 <main id="content" class="page-main">
+<meta name="csrf-token" content="{!! csrf_token() !!}">
 			<!-- Block Spotlight1  -->
 			<div class="so-spotlight1 ">
 				<div class="container">
@@ -41,7 +42,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="loadeding"></div>
+									{{--<div class="loadeding"></div>--}}
 
 								</div>
 							</div>
@@ -267,7 +268,7 @@
 								                        <div class="item-inner">
 									                        <div class="cat_slider_title">
 																		
-									                            <a href="category.html" title="Tange manue" target="_self">
+									                            <a href="{{url('view_category/'. $cat->id)}}" title="Tange manue" target="_self">
 									                                       <i class="fa fa-caret-right"></i> {{$cat->name}} </a>
 									                        </div>
 								                        </div>
@@ -289,6 +290,7 @@
 												<div class="ltabs-items-inner ltabs-slider ">
 												<?php $count=1 ?>
 												@for ($i = 0; $i < count($featured) && $count<=6 ; $i++)
+												
 													<?php $count++; ?>
 													<div class="ltabs-item ">
 														<div class="item-inner product-thumb product-item-container transition ">
@@ -325,10 +327,11 @@
 																</div>
 															</div>
 															<div class="button-group">
-																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
-																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
-																<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
-																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>
+															
+																<button class="wishlist btn-button" type="submit" data-toggle="tooltip" title="Add to Wish List" onclick="wishAdd({{$featured[$i]->id}})"><i class="fa fa-heart"></i></button>															
+																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cartAdd({{$featured[$i]->id}});"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
+																{{--<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>--}}
 															</div>
 														</div>
 					    							</div>
@@ -384,10 +387,10 @@
 																</div>
 															</div>
 															<div class="button-group">
-																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
-																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
-																<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
-																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>
+																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishAdd({{$featured[$i]['id']}})"><i class="fa fa-heart"></i></button>
+																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cartAdd({{$featured[$i]['id']}});"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
+																{{--<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>--}}
 															</div>
 														</div>
 					    							</div>
@@ -437,10 +440,10 @@
 																</div>
 															</div>
 															<div class="button-group">
-																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
-																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
-																<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
-																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>
+																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishAdd({{$featured[$i]['id']}})"><i class="fa fa-heart"></i></button>
+																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cartAdd({{$featured[$i]['id']}});"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
+																{{--<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>--}}
 															</div>
 														</div>
 					    							</div>
@@ -466,12 +469,12 @@
 					</div>
 					<!-- End Banner -->
 					<!-- Mod Supercategory 2 -->
-					<div class="module cus-style-supper-cate supper2">
+					<div class="module cus-style-supper-cate supper3">
 						<div class="header">
 								<h3 class="modtitle">
 								<span class="icon-color">
 									<i class="fa fa-mobile"></i>
-									Some Type 1			
+										Our Specials
 									<small class="arow-after"></small>
 								</span>
 								<strong class="line-color"></strong>
@@ -505,7 +508,7 @@
 								                        <div class="item-inner">
 									                        <div class="cat_slider_title">
 																		
-									                            <a href="category.html" title="Tange manue" target="_self">
+									                            <a href="{{url('view_category/'. $cat->id)}}" title="Tange manue" target="_self">
 									                                       <i class="fa fa-caret-right"></i> {{$cat->name}} </a>
 									                        </div>
 								                            
@@ -564,10 +567,10 @@
 																</div>
 															</div>
 															<div class="button-group">
-																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
-																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
-																<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
-																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>
+																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishAdd({{$allProds[$i]->id}})"><i class="fa fa-heart"></i></button>
+																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cartAdd({{$allProds[$i]->id}});"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
+																{{--<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>--}}
 															</div>
 														</div>
 					    							</div>
@@ -631,7 +634,7 @@
 													<div class="item">
 								                        <div class="item-inner">
 									                        <div class="cat_slider_title">
-									                            <a href="category.html" title="Tange manue" target="_self">
+									                            <a href="{{url('view_category/'. $cat->id)}}" title="Tange manue" target="_self">
 									                                       <i class="fa fa-caret-right"></i> {{$cat->name}} </a>
 									                        </div>
 								                        </div>
@@ -689,10 +692,10 @@
 																</div>
 															</div>
 															<div class="button-group">
-																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
-																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
-																<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
-																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>
+																<button class="wishlist btn-button" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishAdd({{$allProds[$i]->id}})"><i class="fa fa-heart"></i></button>
+																<button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cartAdd({{$allProds[$i]->id}});"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></button>
+																{{--<button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+																<a class="quickview iframe-link visible-lg btn-button" data-toggle="tooltip" title="" data-fancybox-type="iframe" href="quickview.html" data-original-title="Quickview"> <i class="fa fa-search"></i> </a>--}}
 															</div>
 														</div>
 					    							</div>				
@@ -880,4 +883,9 @@
 				</div>
 			</div>
 </main >
+
+@endsection
+
+@section("script")
+
 @endsection
